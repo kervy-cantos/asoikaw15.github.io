@@ -198,7 +198,7 @@ button:hover{
 	
 }
 #card{
-	height: 380px;
+	min-height: 380px;
 	width: 335px;
 	padding: 20px 35px;
 	background: #191919;
