@@ -89,7 +89,7 @@ h4{
 .content{
 	position: absolute;
 	top: 50%;
-	left:8%;
+	left:2%;
 	transform: translateY(-50%);
 }
 .newslatter form{
@@ -198,7 +198,7 @@ button:hover{
 	
 }
 #card{
-	height: 365px;
+	height: 380px;
 	width: 335px;
 	padding: 20px 35px;
 	background: #191919;
