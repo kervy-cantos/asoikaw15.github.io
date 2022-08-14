@@ -1,12 +1,16 @@
 
-body{
+html,body{
     background-color: rgb(26, 25, 25);
-}
-*{
+	width: 100%;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
+}
+*{
+
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
+	
 }
 
 #nav ul{
@@ -59,6 +63,8 @@ span{
     color: #f9004d;
 }
 #hero{
+	left: 0;
+	right: 0;
     height: 100vh;
 	width: 100%;
 	background-image: url(../img/background.jpg);
@@ -126,19 +132,21 @@ span i:hover{
    color: aliceblue;
    transition: .6s; 
 }
-.about{
+#about{
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
 }
-.about img{
+#about img{
 	height: auto;
 	width: 430px;
 }
-.about-text{
+#about-text{
 	width: 550px;
+	text-align: center;
+	
 }
-.main{
+#main{
 	width: 1130px;
 	max-width: 95%;
 	margin: 0 auto;
@@ -146,20 +154,20 @@ span i:hover{
 	align-items: center;
 	justify-content: space-around;
 }
-.about-text h2{
+#about-text h2{
 	color: white;
 	font-size: 75px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
 }
-.about-text h5{
+#about-text h5{
 	color: white;
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin-bottom: 25px;
 	text-transform: capitalize;
 }
-.about-text p{
+#about-text p{
 	color: #fcfc;
 	letter-spacing: 1px;
 	line-height: 28px;
@@ -181,9 +189,67 @@ button:hover{
 	border: 2px solid #f9004d;
 	cursor: pointer;
 }
+#service{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+#title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+#box{
+	justify-content: center;
+	align-items: center;
+	
+}
+#card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
 
+	overflow: hidden;
+	text-align: center;
+}
+#card i{
+	font-size: 50px;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
 
-
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+#card .button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+#card .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
 
 
 

@@ -13,7 +13,7 @@
 </head>
 <body>
     <!--Hero-->
-    <div class="container-fluid" id="hero">
+    <div class="container-fluid mx-0 sm-mx-0" id="hero">
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-transparent" id="nav">
         <div class="container-fluid">  
        <h2 class="logo">Portfo<span>lio</span></h2>
@@ -29,7 +29,7 @@
                 <a class="nav-link" href="#aboutMe">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">My Services</a>
+                <a class="nav-link" href="#service">My Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sample Projects</a>
@@ -54,29 +54,61 @@
         </div>
     </div>
 </div>
-    </div>
       
       <!--About Me-->
 <div class="container-fluid" id="aboutMe">
-    <section class="about">
-		<div class="main">
+    <section id="about" class="row">
+		<div id="main" class="col">
 			<img src="img/main-img.png">
-			<div class="about-text">
+    </div>
+			<div id="about-text" class="col">
 				<h2>About Me</h2>
 				<h5>Developer <span>& Designer</span></h5>
                 <p>I am a full-stack web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations and adding features that give the user a whole new experience.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
 				<button type="button">Let's Talk</button>
 			</div>
-		</div>
-	</section>
-</div>
-
-
-      <!--Past Projects-->
-
-
-
+    </section>
+    </div>
       <!--Services-->
+      <div id="service" class="container-fluid">
+        <div id="title" class="row">
+          <h2 class="col">My Services</h2>
+        </div>
+    
+        <div id="box" class="row">
+          <div id="card" class="col-md-7 col-sx-7">
+            <i class="fas fa-bars"></i>
+            <h5>Web Development</h5>
+            <div class="pra">
+              <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+              <p style="text-align: center;">
+                <a class="button" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+          <div id="card" class="col-md-7 col-sx-7">
+            <i class="far fa-user"></i>
+            <h5>Custom API</h5>
+            <div class="pra">
+              <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+              <p style="text-align: center;">
+                <a class="button" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+          <div id="card" class="col-md-7 col-sx-7">
+            <i class="far fa-bell"></i>
+            <h5>SEO and SEM</h5>
+            <div class="pra">
+              <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+              <p style="text-align: center;">
+                <a class="button" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
