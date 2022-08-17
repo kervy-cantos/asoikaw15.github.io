@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kervy Portfolio</title>
+    <!--AOS Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Font Awesome-->
@@ -16,11 +18,11 @@
 </head>
 <body>
     <!--Hero-->
-    <div class="container-fluid mx-0 sm-mx-0" id="hero">
+    <div class="container-fluid mx-0 sm-mx-0" id="hero" data-aos="fade-left" >
       
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-transparent" id="nav">
+    <nav data-aos="fade-right" data-aos-duration="1000" class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-transparent" id="nav">
         <div class="container-fluid">  
-       <h2 class="logo">Portfo<span>lio</span></h2>
+       <h2 class="logo">Kervy<span>Dev</span></h2>
        <!--Menu on mobile-->
           <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-ellipsis-h fa-2x"></i></span>
@@ -48,7 +50,7 @@
         </div>
         <button type="button" class="button"><a href="https://www.youtube.com/channel/UCHQLfGfUwtgUBMDbPIJrJGw">Subscribe<i class="fab fa-youtube"></i></a></button>
       </nav>
-      <div class="content">
+      <div class="content" data-aos="flip-right" data-aos-duration="1000" data-aos-once="false">
         <h4>Hello, my name is</h4>
         <h1>Kervy <span>Cantos</span></h1>
         <h3>I'am a Web Developer.</h3>
@@ -61,8 +63,8 @@
     </div>
   </div>      
      <!--About Me-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
-<div class="container-fluid" id="aboutMe">
+<button onclick="topFunction()" id="myBtn" title="Go to top" >Back to Top</button>
+<div class="container-fluid" id="aboutMe" data-aos="fade-left" data-aos-duration="1000">
     <section id="about" class="row">
 		<div id="main" class="col">
 			<img src="img/mypic.jpg">
@@ -70,60 +72,57 @@
 			<div id="about-text" class="col">
 				<h2>About Me</h2>
 				<h5>Developer <span>& Designer</span></h5>
-                <p>I am a full-stack web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations and adding features that give the user a whole new experience.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+         <p>I am a full-stack web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations and adding features that give the user a whole new experience.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
 				<button type="button">Let's Talk</button>
 			</div>
     </section>
     </div>
       <!--Services-->
-      <div id="service" class="container-fluid">
+      <div id="service" class="container-fluid" data-aos="fade-right" data-aos-duration="1000">
         <div id="title" class="row">
           <h2 class="col">My Services</h2>
         </div>
-        <div id="box" class="row">
+        <div id="box" class="row" data-aos="zoom-in" data-aos-duration="1500">
           <div id="card" class="col-md-7 col-sx-7">
             <i class="fas fa-bars"></i>
             <h5>Web Development</h5>
             <div class="pra">
               <p>Every website should be built with three primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible. Finally, web design must be logical and readable and reflect how users seek to find the info they need.</p>
               <p style="text-align: center;">
-                <a id="button" href="https://en.wikipedia.org/wiki/Web_service">Read More</a>
-              </p>
+             </p>
             </div>
           </div>
-          <div id="card" class="col-md-7 col-sx-7">
+          <div id="card" class="col-md-7 col-sx-7" data-aos="zoom-in" data-aos-duration="1500">
             <i class="far fa-user"></i>
             <h5>Custom API</h5>
             <div class="pra">
               <p>API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications.</p>
               <p style="text-align: center;">
-                <a id="button" href="https://en.wikipedia.org/wiki/API">Read More</a>
               </p>
             </div>
           </div>
-          <div id="card" class="col-md-7 col-sx-7">
+          <div id="card" class="col-md-7 col-sx-7" data-aos="zoom-in" data-aos-duration="1500">
             <i class="far fa-bell"></i>
             <h5>SEO and SEM</h5>
             <div class="pra">
               <p>Search ads can be a great way to drive new business profitably, but 95% of searchers skip the ads and go directly to the regular, non-paid organic search results. Your business needs to be there, as many people associate Google’s trust in your website as a business they’d like to work with.</p>
               <p style="text-align: center;">
-                <a id="button" href="https://www.webfx.com/blog/seo/seo-vs-sem-what-is-the-difference/">Read More</a>
               </p>
             </div>
           </div>
           </div>
           </div>
       <!------Contact Me------->
-	<div class="contact-me" id="contact">
+	<div class="contact-me" id="contact" data-aos="fade-left" data-aos-duration="1000">
 		<p class="text-center">Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a>
+		<a class="button-two" href="#" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="100">Hire Me</a>
 	</div>
 
 	<!------footer start--------->
-	<footer>
+	<footer data-aos="fade-right" data-aos-duration="1000">
 		<p>Kervy Cantos</p>
 		<p>Follow me on social media:</p>
-		<div class="social">
+		<div class="social" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="100">
 			<a href="https://www.facebook.com/kerv.con"><i class="fab fa-facebook-f"></i></a>
 			<a href="https://www.instagram.com/yvrekyvrek/"><i class="fab fa-instagram"></i></a>
 			<a href="https://github.com/asoikaw15"><i class="fab fa-github"></i></a>
@@ -153,7 +152,11 @@
     }
     </script>
     
-    
+<!--AOS Script-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <!--Bootstrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>

@@ -29,11 +29,11 @@ html,body{
     letter-spacing: 2px;
 }
 #nav ul li a:hover{
-	color: #f9004d;
+	color: #FF9F29;
 	transition: .4s;
 }
 .button{
-	background-color:#f9004d;
+	background-color:#FF9F29;
 	border: 2px solid transparent;
 	font-weight: bold;
 	padding: 10px 20px;
@@ -50,7 +50,7 @@ html,body{
 }
 .button:hover{
 	background-color: transparent;
-	border: 2px solid #f9004d;
+	border: 2px solid #FF9F29;
 	cursor: pointer;
 }
 .logo{
@@ -60,7 +60,7 @@ html,body{
 	cursor: pointer;
 }
 span{
-    color: #f9004d;
+    color: #FF9F29;
 }
 #hero{
 	left: 0;
@@ -70,9 +70,7 @@ span{
 	background-image: url(../img/background.gif);
 	background-size: cover;
 	background-position: center;
-	-webkit-animation: slideInLeft 2s forwards;
-	-moz-animation: slideInLeft 2s forwards;
-	animation: slideInLeft 2s forwards;
+	animation: 2s;
 
 }
 h1{
@@ -94,7 +92,7 @@ h4{
 	position: absolute;
 	top: 50%;
 	left:2%;
-	transform: translateY(-50%);
+	
 
 }
 .newslatter form{
@@ -106,7 +104,7 @@ h4{
 	display: inline-block;
 	width: 100%;
 	padding: 14px 130px 14px 15px;
-	border: 2px solid #f9004d;
+	border: 2px solid #FF9F29;
 	outline: none;
 	border-radius: 30px;
 }
@@ -117,7 +115,7 @@ h4{
 	border: none;
 	padding: 10px 30px;
 	border-radius: 30px;
-	background-color:#f9004d;
+	background-color:#FF9F29;
 	color: white;
 	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
 	top: 6px;
@@ -134,9 +132,7 @@ span i:hover{
 	width: 100%;
 	padding: 10px 0px;
 	background-color: #191919;
-	-webkit-animation: slideInRight 4s forwards;
-	-moz-animation: slideInRight 4s forwards;
-	animation: slideInRight 4s forwards;
+	
 	
 	
 }
@@ -144,9 +140,14 @@ span i:hover{
 	height: auto;
 	width: 430px;
 }
+#about img:hover{
+	transform: scale(1.1);
+	transition: .4s;
+}
 #about-text{
 	width: 550px;
 	text-align: center;
+	margin-top: 148px;
 	
 }
 #main{
@@ -178,7 +179,7 @@ span i:hover{
 	margin-bottom: 45px;
 }
 button{
-	background-color:#f9004d;
+	background-color:#FF9F29;
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -189,16 +190,14 @@ button{
 }
 button:hover{
 	background-color: transparent;
-	border: 2px solid #f9004d;
+	border: 2px solid #FF9F29;
 	cursor: pointer;
 }
 #service{
 	background: #101010;
 	width: 100%;
 	padding: 100px 0px;
-	-webkit-animation: slideInLeft 6s forwards;
-	-moz-animation: slideInLeft 6s forwards;
-	animation: slideInLeft 6s forwards;
+
 }
 #title h2{
 	color: white;
@@ -213,7 +212,7 @@ button:hover{
 	
 }
 #card{
-	min-height: 380px;
+ 	height: 410px;
 	width: 335px;
 	padding: 20px 35px;
 	background: #191919;
@@ -227,7 +226,7 @@ button:hover{
 	font-size: 50px;
 	text-align: center;
 	margin: 25px 0px;
-	color: #f9004d;
+	color: #FF9F29;
 
 }
 h5{
@@ -242,7 +241,7 @@ h5{
 	margin-bottom: 25px;
 }
 #card #button{
-	background-color:#f9004d;
+	background-color:#FF9F29;
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -253,8 +252,12 @@ h5{
 }
 #card #button:hover{
 	background-color: transparent;
-	border: 2px solid #f9004d;
+	border: 2px solid #FF9F29;
 	cursor: pointer;
+}
+#card:hover{
+	transform: scale(1.1);
+	transition: 1s;
 }
 .contact-me{
 	width: 100%;
@@ -272,7 +275,7 @@ h5{
 	margin-bottom: 25px;
 }
 .contact-me .button-two{
-	background-color:#f9004d;
+	background-color:#FF9F29;
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -282,9 +285,10 @@ h5{
 	transition: .4s; 
 }
 .contact-me .button-two:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
+	background-color: #1A4D2E;
+	border: 2px solid #1A4D2E;
 	cursor: pointer;
+	transition: .4s;
 }
 footer{
 	position: relative;
@@ -295,10 +299,7 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	-webkit-animation: slideInRight 8s forwards;
-	-moz-animation: slideInRight 8s forwards;
-	animation: slideInRight 8s forwards;
-	
+
 }
 footer p:nth-child(1){
 	font-size: 30px;
@@ -322,7 +323,7 @@ footer p:nth-child(2){
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background:  #f9004d;
+	background:  #FF9F29;
 	border-radius: 50%;
 	margin: 22px 10px;
 	color: white;
@@ -330,12 +331,12 @@ footer p:nth-child(2){
 	font-size: 20px;
 }
 .social a:hover{
-	transform: scale(1.3);
+	transform: scale(1.4);
 	transition: .3s;
 }
 .end{
 	position: absolute;
-	color:#f9004d;
+	color:#FF9F29;
 	bottom: 35px;
 	font-size: 14px; 
 }
@@ -348,7 +349,7 @@ footer p:nth-child(2){
 	font-size: 15px;
 	border: none;
 	outline: none;
-	background-color: red;
+	background-color: #FF9F29;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -357,7 +358,7 @@ footer p:nth-child(2){
   }
   
   #myBtn:hover {
-	background-color: #555;
+	background-color: black;
 
   }
   @media screen and (max-width: 770px){
