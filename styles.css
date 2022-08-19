@@ -367,7 +367,8 @@ footer p:nth-child(2){
     }
     .content{
         position: relative;
-    }
+		top: 10%;
+	 }
 	#about{
 		margin-top: 150px;
 	}
