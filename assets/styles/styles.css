@@ -4,16 +4,20 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	/* remove horizontal scroll bar */
 	overflow-x: hidden;
+
 }
 
 * {
 
 	font-family: 'Josefin Sans', sans-serif;
+	/* add border size on box sizes */
 	box-sizing: border-box;
 
 }
 
+/* Nav bar design */
 #nav ul {
 	margin-left: auto;
 }
@@ -37,7 +41,8 @@ body {
 	transition: .4s;
 }
 
-.button,.proj-card a {
+.button,
+.proj-card a {
 	background-color: #FF9F29;
 	border: 2px solid transparent;
 	font-weight: bold;
@@ -68,9 +73,10 @@ body {
 }
 
 span {
-	color: #FF9F29;
+	color: #FF9F29 !important;
 }
 
+/* Hero section design */
 #hero {
 	left: 0;
 	right: 0;
@@ -143,6 +149,7 @@ span i:hover {
 	transition: .6s;
 }
 
+/* About me section design */
 #about {
 	position: relative;
 	min-height: 100vh;
@@ -220,6 +227,7 @@ button:hover {
 	cursor: pointer;
 }
 
+/* Services section design */
 #service {
 	background: #101010;
 	width: 100%;
@@ -296,6 +304,7 @@ h5 {
 	transition: 1s;
 }
 
+/* Contact me section design */
 .contact-me {
 	width: 100%;
 	height: 290px;
@@ -404,13 +413,16 @@ footer p:nth-child(2) {
 	border-radius: 20px;
 
 }
-.proj-card{
+
+/* Project cards design */
+.proj-card {
 	box-sizing: border-box;
 	border: 3px aliceblue solid;
 	border-radius: 15px;
 	overflow: hidden;
 }
-.proj-card:hover{
+
+.proj-card:hover {
 	transform: scale(1.05);
 	border: 3px #FF9F29 solid;
 	transition: .8s;
@@ -420,40 +432,23 @@ footer p:nth-child(2) {
 	background-color: black;
 
 }
-.proj-col{
+
+.proj-col {
 	text-align: right;
-	color:#FF9F29;
-}
-p span{
-	color:white
-}
-.proj-wrapper{
-	width:60%;
-	border:2px blanchedalmond solid;
-	border-radius: 15px;
+	color: #FF9F29;
 }
 
-@-webkit-keyframes scroll {
-	0% {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-	}
-	100% {
-	-webkit-transform: translateX(calc(-250px * 7));
-	transform: translateX(calc(-250px * 7));
-	}
-	}
-	@keyframes scroll {
-	0% {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-	}
-	100% {
-	-webkit-transform: translateX(calc(-250px * 7));
-	transform: translateX(calc(-250px * 7));
-	}
-	}
-	.slider {
+p span {
+	color: white
+}
+
+.proj-wrapper {
+	width: 60%;
+	border: 2px blanchedalmond solid;
+	border-radius: 15px;
+}
+/* Infinite carousel */
+.slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
 	height: 100px;
@@ -461,57 +456,68 @@ p span{
 	overflow: hidden;
 	position: relative;
 	width: 95%;
-	}
-	.slider::before, .slider::after {
+}
+
+.slider::before,
+.slider::after {
 	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
 	content: "";
 	height: 100px;
 	position: absolute;
 	width: 50px;
 	z-index: 2;
-	}
-	.slider::after {
+}
+
+.slider::after {
 	right: 0;
 	top: 0;
 	-webkit-transform: rotateZ(180deg);
 	transform: rotateZ(180deg);
-	}
-	.slider::before {
+}
+
+.slider::before {
 	left: 0;
 	top: 0;
-	}
-	.slider .slide-track {
+}
+
+.slider .slide-track {
 	-webkit-animation: scroll 40s linear infinite;
 	animation: scroll 40s linear infinite;
 	display: flex;
 	width: calc(250px * 14);
-	}
-	.slider .slide {
+}
+
+.slider .slide {
 	height: 100px;
 	width: 250px;
-	}
-@media screen and (max-width:1071px){
-		.proj-col{
+}
+/* Media queries */
+@media screen and (max-width:1071px) {
+	.proj-col {
 		text-align: center;
 	}
 
-	.proj-row{
+	.proj-row {
 		flex-direction: column;
 		text-align: center;
 	}
-	.proj-wrapper{
+
+	.proj-wrapper {
 		width: 90%;
 	}
-	.proj-card{
+
+	.proj-card {
 		margin: 5px auto 5px;
 	}
-	.proj-row .button{
+
+	.proj-row .button {
 		width: 200px;
 		margin: 10px auto 10px !important;
 		display: block !important;
 	}
-	
+
 }
+
 @media screen and (max-width: 770px) {
 
 	.button {
@@ -530,25 +536,53 @@ p span{
 	#about img {
 		margin-top: 80px;
 	}
-	.proj-col{
+
+	.proj-col {
 		text-align: center;
 	}
 
-	.proj-row{
+	.proj-row {
 		flex-direction: column;
 		text-align: center;
 	}
-	.proj-wrapper{
+
+	.proj-wrapper {
 		width: 90%;
 		padding: 20px 0px 20px !important;
 	}
-	.proj-card{
+
+	.proj-card {
 		margin: 5px auto 5px;
 	}
-	.proj-row .button{
+
+	.proj-row .button {
 		width: 200px;
 		margin: 10px auto 10px !important;
 		display: block !important;
+	}
+}
+/* Keyframes for animation */
+@-webkit-keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
 	}
 }
 
