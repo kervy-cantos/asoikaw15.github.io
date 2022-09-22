@@ -26,6 +26,7 @@ body {
 	list-style-type: none;
 	display: inline-block;
 	padding: 10px 25px;
+	font-size: 1.5em;
 }
 
 #nav ul li a {
@@ -67,7 +68,7 @@ body {
 
 .logo {
 	color: white;
-	font-size: 35px;
+	font-size: 2.5em;
 	letter-spacing: 1px;
 	cursor: pointer;
 }
@@ -415,6 +416,12 @@ footer p:nth-child(2) {
 }
 
 /* Project cards design */
+.projects-page{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/projects-background.png');
+	background-size: contain;
+	background-position:center center;
+	animation: 2s;
+}
 .proj-card {
 	box-sizing: border-box;
 	border: 3px aliceblue solid;
@@ -559,6 +566,9 @@ p span {
 		width: 200px;
 		margin: 10px auto 10px !important;
 		display: block !important;
+	}
+	.proj-title{
+		font-size: 3.5em !important;
 	}
 }
 /* Keyframes for animation */
