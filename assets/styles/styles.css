@@ -37,7 +37,7 @@ body {
 	transition: .4s;
 }
 
-.button {
+.button,.proj-card a {
 	background-color: #FF9F29;
 	border: 2px solid transparent;
 	font-weight: bold;
@@ -167,7 +167,7 @@ span i:hover {
 #about-text {
 	width: 550px;
 	text-align: center;
-	margin-top: 148px;
+	margin-top: 100px;
 
 }
 
@@ -404,13 +404,37 @@ footer p:nth-child(2) {
 	border-radius: 20px;
 
 }
+.proj-card{
+	box-sizing: border-box;
+	border: 3px aliceblue solid;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.proj-card:hover{
+	transform: scale(1.05);
+	border: 3px #FF9F29 solid;
+	transition: .8s;
+}
 
 #myBtn:hover {
 	background-color: black;
 
 }
+.axie-tracker{
+	text-align: right;
+	color:#FF9F29;
+}
+p span{
+	color:white
+}
+.proj-wrapper{
+	width:60%;
+	border:2px blanchedalmond solid;
+	border-radius: 15px;
+}
 
 @media screen and (max-width: 770px) {
+
 	.button {
 		display: none
 	}
@@ -426,6 +450,12 @@ footer p:nth-child(2) {
 
 	#about img {
 		margin-top: 80px;
+	}
+	.axie-tracker{
+		text-align: center;
+	}
+	.proj-card{
+		justify-content: center;
 	}
 
 }
