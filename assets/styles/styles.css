@@ -432,6 +432,7 @@ p span{
 	border:2px blanchedalmond solid;
 	border-radius: 15px;
 }
+
 @-webkit-keyframes scroll {
 	0% {
 	-webkit-transform: translateX(0);
